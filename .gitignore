@@ -1,1 +1,12 @@
 .DS_Store
+main.aux
+.gitignore
+main.bbl
+main.bcf
+main.blg
+main.fdb_latexmk
+main.fls
+.gitignore
+main.run.xml
+main.synctex.gz
+main.log
