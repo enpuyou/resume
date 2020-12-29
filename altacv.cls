@@ -197,6 +197,16 @@
   \smallskip\normalsize
 }
 
+\newcommand{\cvexperience}[4]{%
+  {\large\color{accent}#1\hfill}
+  \ifstrequal{#2}{}{}{\faCalendar\hspace{0.4em}\small#2\par}%
+  \smallskip\normalsize
+  \ifstrequal{#4}{}{}{
+  \textbf{\color{accent}#4\hfill}
+  \ifstrequal{#3}{}{}{\small#3}
+  \smallskip\normalsize}
+}
+
 \newcommand{\cvhonor}[3]{%
   {\large\color{accent}#1}
   \smallskip\normalsize
@@ -216,8 +226,18 @@
   %\smallskip
 }
 
-\newcommand{\cvproject}[1]{%
-  {\textbf{\color{accent}#1}\par}
+% \newcommand{\cvproject}[1]{%
+%   {\textbf{\color{accent}#1}\par}
+%   \smallskip\normalsize
+% }
+
+\newcommand{\cvproject}[2]{%
+  {\large\color{accent}#1\hfill}
+  \smallskip\normalsize
+  \ifstrequal{#2}{}{}{
+  {\small\color{accent}#2}\par
+  }
+%   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.4em}#4}}}\par
   \smallskip\normalsize
 }
 
