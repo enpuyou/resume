@@ -207,15 +207,15 @@
   \smallskip\normalsize}
 }
 
-\newcommand{\cvhonor}[3]{%
-  {\large\color{accent}#1}
-  \smallskip\normalsize
-  \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\par
-  \smallskip}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.3em}#3}}}\par
-%   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.4em}#4}}}\par
-  \smallskip\normalsize
+\newcommand{\cvhonor}[4]{%
+{\textbf{\color{accent}#1}}
+\normalsize
+\ifstrequal{#2}{}{}{
+\textbf{\color{accent}#2}\par
+\smallskip}
+\ifstrequal{#3}{}{}{{\small{#3}}}%
+\ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.4em}#4}}}\par
+\smallskip\normalsize
 }
 
 \newcommand{\cvachievement}[3]{%
